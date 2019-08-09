@@ -1,0 +1,277 @@
+html {
+    background-color: #e6e6e6;
+}
+.banner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    background: url(../asset/hsjj_03.png) no-repeat center;
+
+    .web-title {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 100px;
+        left: 40%;
+        height: 175px;
+        width: 490px;
+        background: url(../asset/行业解决方案.png) no-repeat;
+        background-size: 100% 50%;
+        //border: 1px solid;
+        .word {
+            float: right;
+            margin-top: 85px;
+            height: 40%;
+            width: 40%;
+            border-top: #ffffff solid;
+            color: #ffffff;
+            letter-spacing: 5px;
+            font-size: 2.7rem;
+            opacity: 0.4;
+        }
+        .light-bulb {
+            display: inline-block;
+            position: relative;
+            transform: scale(0.8);
+            left: 100%;
+            top: -10px;
+        }
+    }
+
+}
+.catalog {
+    position: relative;
+    top: -60px;
+    .module {
+        float: left;
+        width: 250px;
+        height: 350px;
+        margin: 0 8px;
+        background-color: #d8dfe7;
+        border-radius: 6px;
+        box-shadow: 0px 3px 5px #999999;
+        transition: transform 1s;
+        .bg-img {
+            height: 150px;
+            background-size: 100% 100%;
+        }
+        &:nth-of-type(1) {
+            .bg-img {
+                background-image: url(../asset/army.png);
+            }
+        }
+        &:nth-of-type(2) {
+            .bg-img {
+                background-image: url(../asset/finance.png);
+            }
+        }
+        &:nth-of-type(3) {
+            .bg-img {
+                background-image: url(../asset/traffic.png);
+            }
+        }
+        &:nth-of-type(4) {
+            .bg-img {
+                background-image: url(../asset/energy.png);
+            }
+        }
+        &:nth-of-type(5) {
+            .bg-img {
+                background-image: url(../asset/solution/gongjianfa.png);
+            }
+        }
+        &:nth-of-type(6) {
+            .bg-img {
+                background-image: url(../asset/solution/wenjiao.png);
+            }
+        }
+        &:nth-of-type(7) {
+            .bg-img {
+                background-image: url(../asset/solution/chengshi.png);
+            }
+        }
+        &:nth-of-type(8) {
+            .bg-img {
+                background-image: url(../asset/solution/nongye.png);
+            }
+        }
+        &:nth-of-type(9) {
+            .bg-img {
+                background-image: url(../asset/army.png);
+            }
+        }
+        &:nth-of-type(10) {
+            .bg-img {
+                background-image: url(../asset/finance.png);
+            }
+        }
+        &:nth-of-type(11) {
+            .bg-img {
+                background-image: url(../asset/traffic.png);
+            }
+        }
+        &:nth-of-type(12) {
+            .bg-img {
+                background-image: url(../asset/energy.png);
+            }
+        }
+        &:nth-of-type(13) {
+            .bg-img {
+                background-image: url(../asset/solution/gongjianfa.png);
+            }
+        }
+        &:nth-of-type(14) {
+            .bg-img {
+                background-image: url(../asset/solution/wenjiao.png);
+            }
+        }
+        &:nth-of-type(15) {
+            .bg-img {
+                background-image: url(../asset/solution/chengshi.png);
+            }
+        }
+        &:nth-of-type(16) {
+            .bg-img {
+                background-image: url(../asset/solution/nongye.png);
+            }
+        }
+        .line {
+            position: relative;
+            top: -17px;
+            height: 1px;
+            background-color: #ffffff;
+            transform: skewY(-6.5deg);
+        }
+        .title {
+            color: #d40e10;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+        .content {
+            padding: 0 60px;
+            color: #858585;
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+        }
+        &:nth-of-type(2n) {
+            background-color: #ffffff;
+        }
+        &:hover {
+            background-color: #d40e10;
+            .title {
+                color: #ffffff;
+            }
+            .content {
+                color: #ffffff;
+            }
+        }
+    }
+    .button-left {
+        position: absolute;
+        top: 50%;
+        right: calc(50% + 580px);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        div {
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+            border-left: 3px solid #ffffff;
+            border-bottom: 3px solid #ffffff;
+            transform: rotate(45deg);
+        }
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+    .button-right {
+        position: absolute;
+        top: 50%;
+        left: calc(50% + 580px);
+        height: 50px;
+        width: 50px;
+        border-radius: 25px;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        div {
+            margin-top: 15px;
+            margin-left: 12px;
+            width: 20px;
+            height: 20px;
+            border-right: 3px solid #ffffff;
+            border-top: 3px solid #ffffff;
+            transform: rotate(45deg);
+        }
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+    
+}
+.main-content {
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    background-image: url(../asset/bg.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    .flag {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+        left: calc((100% - 1280px)/2);
+
+        div:nth-of-type(1) {
+            width: 60px;
+            height: 30px;
+            background-color: #d40e10;
+        }
+        div:nth-of-type(2) {
+            height: 60px;
+            width: 60px;
+            border-top: solid #d40e10 30px;
+            border-left: solid transparent 30px;
+            border-right: solid transparent 30px;
+        }
+    }
+    .panel {
+        width: 1280px;
+        margin: -25px auto 0 auto;
+        // padding: 0 50px 0 50px;
+        .line {
+            width: 40px;
+            height: 5px;
+            background-color: #d40e10;
+        }
+        .title {
+            font-size: 3.5rem;
+            letter-spacing: px;
+            color: #000000;
+        }
+        .para {
+            margin-top: 20px;
+            .subtitle {
+                margin-top: 20px;
+                letter-spacing: 5px;
+                font-size: 2.5rem;
+                color: #d40e10;
+            }
+            .subtitle2 {
+                margin-top: 20px;
+                font-size: 2rem;
+                font-family: SimHei;
+            }
+            .content {
+                margin-top: 20px;
+                color: #707070;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

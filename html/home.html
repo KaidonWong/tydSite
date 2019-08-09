@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+</head>
+<!-- html-loader 不能识别这些图片； -->
+<img src="${require('../asset/ewm.png')}" alt="" style="display:none;">
+<img src="${require('../asset/jsicbok.png')}" alt="" style="display:none;">
+<img src="${require('../asset/服务热线.png')}" alt="" style="display:none;">
+
+<body>
+    <div class='banner'>
+        <div class='bg-img' id='img1'>
+            <div class='content'>
+                <div class='title'></div>
+                <div class='subtitle'>努力形成全要素、多领域、高效益的军民融合深度发展格局</div>
+            </div>
+        </div>
+        <div class='bg-img' id='img2'>
+            <div class='content'>
+                <div class='clearfix'>
+                    <p>开拓奋进&nbsp;创新求实&nbsp;团结和谐</p>
+                </div>
+                <div class='clearfix'>
+                    <p>前瞻&nbsp;高效&nbsp;稳健</p>
+                </div>
+                <div class='clearfix'>
+                    <p>——共创辉煌明天</p>
+                </div>
+            </div>
+        </div>
+        <div class='bg-img' id='bg-mask'></div>
+        <div class='bg-buttons'>
+            <div class='button-left'>
+                <div></div>
+            </div>
+            <div class='button-right'>
+                <div></div>
+            </div>
+        </div>
+
+        <!--  header -->
+        <%= require('html-loader!./header.html') %>
+    </div>
+    <div class='main-content'>
+        <div class='boxes'>
+            <div class='box' id='box1'>
+                <div class='title'>
+                    <div class='line'></div>
+                    <div>关于天亿达</div>
+                </div>
+                <div class='subtitle'>
+                    苏州天亿达科技有限公司
+                </div>
+                <div class='subtitle2'>
+                    Suzhou tianyida technology co. LTD
+                </div>
+                <div class='para'>
+                    苏州天亿达科技有限公司于2002年成立,注册资金5000万元，作为高新技术企业，天亿达凭借先进的信息化平台和产品、服务优势，始终以信息化建设为立足点，坚持多元化发展 ...
+                    <span>[查看详情]</span>
+                </div>
+                <img src="${require('../asset/home/img_gsjj.png')}" alt="">
+            </div>
+            <div class='box' id='box2'>
+                <div class='button'>
+                    more+
+                </div>
+                <div class='title'>
+                    <div class='line'></div>
+                    <div>产品展示</div>
+                </div>
+                <div class='paras'>
+                    <div class='title1'>全天候日光型光电转台</div>
+                    <div class='clearfix'>
+                        <div style="float: left;margin-top: 10px;margin-right: 10px;"><img
+                                src="${require('../asset/home/img_gdzt.png')}" alt=""></div>
+                        <div class='para1'>采用球形转台设计方式，转台防护性和环境适应性都满足最恶劣的天气环境。转台的密封性和防电磁干扰性满足国家严格的要求，护罩玻璃在防尘方面一定要做特殊处理...
+                        </div>
+                    </div>
+                    <div class='title2'>车载式激光驱鸟器</div>
+                    <div class='clearfix'>
+                        <div style="float: right;margin-top: 10px;margin-left: 10px;"><img
+                                src="${require('../asset/home/img_czqnq.png')}" alt=""></div>
+                        <div class='para1'>智能激光驱鸟器是基于光学生物防治理论，是激光技术、精密仪器与电动控制相结合的全新产品。具有保护性驱鸟、驱鸟效率高、无污染、安全可靠等特点，是机场驱鸟...
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='box' id='box3'>
+                <div class='title'>
+                    <div class='line'></div>
+                    <div>行业解决方案</div>
+                </div>
+                <div class='panel'>
+                    <div><img src="${require('../asset/home/solution_cs.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_gjf.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_jr.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_nyhb.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_jd.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_wjw.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_ny.png')}" alt=""></div>
+                    <div><img src="${require('../asset/home/solution_jt.png')}" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class='news'>
+            <div class='title'>
+                <div class='line'></div>
+                <div>新闻资讯</div>
+            </div>
+            <div class='button'>
+                more+
+            </div>
+            <div class='news-content'>
+                <div class='clearfix'>
+                    <div class='news-img'><img src="${require('../asset/home/img_new01.png')}" alt=""></div>
+                    <div class='news-title'>天亿达与西交利物浦大学签署校企合作协议</div>
+                    <div class='news-time'>2018-04-24</div>
+                    <div class='news-para'>
+                        4月18日，在苏州工业园区统战部的指导推动下，苏州天亿达科技有限公司与西交利物浦大学在西交利物浦大学签署了校企合作协议...
+                        <span>[查看详情]</span>
+                    </div>
+                </div>
+                <div class='clearfix'>
+                    <div class='news-img'><img src="${require('../asset/home/img_new01.png')}" alt=""></div>
+                    <div class='news-title'>热烈庆祝中国共产党第十九次全国代表大会</div>
+                    <div class='news-time'>2018-04-24</div>
+                    <div class='news-para'>
+                        2017年10月18日上午九时，中国共产党第十九次全国代表大会在北京人民大会堂隆重开幕。这次大会，是在全面建成小康社会决胜阶段...
+                        <span>[查看详情]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style='position: relative;top: -180px;'>
+    <!--  footer -->
+    <%= require('html-loader!./footer.html') %>
+    </div>
+</body>
+
+</html>

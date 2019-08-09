@@ -1,0 +1,234 @@
+html {
+    min-width: 1280px;
+    background-color: #e6e6e6;
+}
+
+.banner {
+    position: relative;
+    margin-bottom: -100px;
+    width: 100%;
+    height: 400px;
+    .bg-img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(../asset/zhao/聘.png) no-repeat center;
+        .content {
+            position: relative;
+            top: 150px;
+            left: calc(50% - 100px);
+            width: 200px;
+            .title {
+                font-size: 4.5rem;
+                color: #ffffff;
+                text-align: center;
+                letter-spacing: 3px;
+            }
+            .subtitle {
+                border-top: 2px solid #ffffff;
+                font-size: 3rem;
+                color: #ffffff;
+                text-align: center;
+                letter-spacing: 2px;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 50px 20px 50px;
+    background-color: #ffffff;
+    border-radius: 3px;
+
+    .tabs {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .tab {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .note {
+                text-align: center;
+                font-size: 2.4rem;
+                letter-spacing: 3px;
+            }
+            &.active {
+                .note {
+                    font-weight: bold;
+                    color: #d40e10;
+                }
+            }
+        }
+    }
+
+    .panels {
+        width: 70%;
+        margin: 100px auto 0 auto;
+        .panel {
+            display: none;
+        }
+        .zpxx {
+            display: block;
+            .title {
+                display: flex;
+                justify-content: space-between;
+                >div{
+                    color: #666666;
+                    font-size: 1.4rem;
+                }
+            }
+            .content {
+                margin-bottom: 50px;
+                .line {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px 0 20px 0;
+                    transition: all 0.5s;
+                    >div {
+                        font-size: 1.6rem;
+                    }
+                    .button {
+                        margin: 5px;
+                        height: 10px;
+                        width: 10px;
+                        border-top: 1.5px solid #7a7a7a;
+                        border-left: 1.5px solid #7a7a7a;
+                        transform-origin: 25% 25%;
+                        transition: transform 0.3s;
+                        transform: rotate(225deg);
+                        &.up {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                .subcontent {
+                    display: none;
+                    padding: 20px;
+                    border-top: 1px solid #cccccc;
+                    .sub-name {
+                        font-size: 1.5rem;
+                        color: #7a7a7a;
+                        line-height: 2;
+                    }
+                    .para {
+                        margin-bottom: 30px;
+                        font-size: 1.4rem;
+                        color: #666666;
+                        line-height: 2;
+                    }
+                }
+            }
+            .pagination {
+                .center {
+                    width: 590px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-around;
+                    >a {
+                        padding: 0 10px 0 10px;
+                        color: #666666;
+                        border: 1px solid #cccccc;
+                        border-radius: 3px;
+                        text-align: center;
+                        line-height: 2;
+                        font-size: 1.5rem;
+                        &:hover {
+                            border-color: #d40e10;
+                            background-color: #d40e10;
+                            color: #ffffff;
+                            cursor: default;
+                        }
+                        &.active {
+                            border-color: #d40e10;
+                            background-color: #d40e10;
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .wyyp {
+            span {
+                color: #d40e10;
+                font-size: 1.5rem;
+            }
+            >div {
+                display: inline-block;
+                width: 40%;
+                margin: 10px;
+                
+                >label {
+                    display: inline-block;
+                    width: 80px;
+                    font-size: 1.4rem;
+                    text-align: right;
+                }
+            }
+            input[type='text'] {
+                width: 150px;
+                height: 30px;
+                line-height: 2;
+                font-size: 1.5rem;
+                outline: none;
+                border:1px solid #ccc;
+                border-radius: 3px;
+            }
+            textarea {
+                width: 505px;
+                line-height: 2;
+                font-size: 1.5rem;
+                outline: none;
+                border:1px solid #ccc;
+                border-radius: 3px;
+            }
+            .commit-button {
+                display: block;
+                margin: 0 auto;
+                width: 100px;
+                border: 1px solid #d40e10;
+                border-radius: 3px;
+                color: #d40e10;
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 2;
+                &:hover {
+                    background-color: #d40e10;
+                    color: #ffffff;
+                    cursor: default;
+                }
+            }
+        }
+        .yrln {
+            height: 500px; 
+            >div {
+                text-align: center;
+                &:nth-of-type(1) {
+                    font-size: 3rem;
+                    margin: 20px;
+                }
+                &:nth-of-type(2) {
+                    font-size: 2rem;
+                    margin-bottom: 50px;
+                }
+                &:nth-of-type(3) {
+                    font-size: 3rem;
+                    margin: 20px;
+                }
+
+
+            }
+        }
+
+
+
+    }
+}

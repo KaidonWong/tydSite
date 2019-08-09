@@ -1,0 +1,168 @@
+html {
+    min-width: 1280px;
+    background-color: #e6e6e6;
+}
+
+.banner {
+    position: relative;
+    margin-bottom: -100px;
+    width: 100%;
+    height: 400px;
+    .bg-img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: url(../asset/news/banner.png) no-repeat center;
+        .content {
+            position: relative;
+            top: 150px;
+            left: calc(50% - 100px);
+            width: 200px;
+            .title {
+                font-size: 4.5rem;
+                color: #ffffff;
+                text-align: center;
+                letter-spacing: 3px;
+            }
+            .subtitle {
+                border-top: 2px solid #ffffff;
+                font-size: 3rem;
+                color: #ffffff;
+                text-align: center;
+                letter-spacing: 2px;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 50px 20px 50px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    .tabs {
+        width: 250px;
+        margin: 0 auto;
+        border-radius: 6px;
+        border: 1px solid #d40e10;
+        &>div {
+            width: 50%;
+            float: left;
+            font-size: 1.8rem;
+            padding: 0 20px;
+            line-height: 1.8;
+            text-align: center;
+            color: #666666;
+            &:hover {
+                background-color: #d40e10;
+                color: #ffffff;
+                cursor: default;
+            }
+        }
+        .active {
+            color: #ffffff;
+            background-color: #d40e10;
+        }
+    }
+    .panels {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .panel {
+                width: 500px;
+                padding: 20px;
+                border-radius: 5px;
+                border: 1px solid #cccccc;
+                box-shadow: 0 0 5px #cccccc;
+                &:hover {
+                    border: 1px solid #d40e10;
+                }
+                &:nth-of-type(odd) {
+                    margin: 20px 10px 20px 80px;
+                }
+                &:nth-of-type(even) {
+                    margin: 20px 80px 20px 10px;
+                }
+                img {
+                    display: block;
+                    float: right;
+                }
+                .title {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    margin-bottom: 4px;
+                }
+                .time {
+                    font-size: 1.2rem;
+                    color: #999999;
+                    margin-bottom: 10px;
+                }
+                .content {
+                    font-size: 1.4rem;
+                    color: #333333;
+                    span {
+                        color: #d40e10;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .pagination {
+            .center {
+                width: 50%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                >a {
+                    padding: 0 10px 0 10px;
+                    color: #666666;
+                    border: 1px solid #cccccc;
+                    border-radius: 3px;
+                    text-align: center;
+                    line-height: 2;
+                    font-size: 1.5rem;
+                    &:hover {
+                        border-color: #d40e10;
+                        background-color: #d40e10;
+                        color: #ffffff;
+                        cursor: default;
+                    }
+                    &.active {
+                        border-color: #d40e10;
+                        background-color: #d40e10;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        &.hide {
+            display: none;
+        }
+    }
+    .specific-info {
+        >div {
+            line-height: 1.6;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5rem;
+        }
+        .date {
+            margin: 15px;
+            font-size: 1.2rem;
+            color: #7a7a7a;
+        }
+        .para {
+            line-height: 1.6;
+            font-size: 1.4rem;
+            text-align: left;
+            text-indent: 28px;
+        }
+    }
+}

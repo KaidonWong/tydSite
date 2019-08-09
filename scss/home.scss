@@ -1,0 +1,338 @@
+html {
+    min-width: 1280px;
+    background-color: #e6e6e6;
+}
+
+@keyframes bg-switch {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.banner {
+    position: relative;
+    height: 600px;
+    width: 100%;
+
+    .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+    }
+    #img1 {
+        background: url(../asset/home/bg02.png) no-repeat center;
+        .content {
+            position: relative;
+            top: 200px;
+            left: calc(50% - 300px);
+            width: 600px;
+            .title {
+                width: 100%;
+                height: 80px;
+                background: url(../asset/home/军民融合国家战略.png) no-repeat;
+                background-size: 100% 100%;
+            }
+            .subtitle {
+                margin-top: 20px;
+                color: #efb92e;
+                line-height: 2;
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 20px;
+                background-color: #e60e11;
+                
+            }
+        }
+    }
+    #img2 {
+        background: url(../asset/home/bg01.png) no-repeat center;
+        .content {
+            // background-color: rgba($color: #000000, $alpha: 0.5);
+            position: relative;
+            top: 200px;
+            left: calc(50% - 500px);
+            width: 1000px;
+            div {
+                p {
+                    float: right;
+                    margin: 0;
+                    padding: 0;
+                    color: #ffffff;
+                }
+                &:nth-of-type(1){
+                    p {
+                        font-size: 6rem;
+                        font-weight: bold;
+                        letter-spacing: 2px;
+                    }
+                }
+                &:nth-of-type(2){
+                    p {
+                        font-size: 4rem;
+                        letter-spacing: 2px;
+                    }
+                }
+                &:nth-of-type(3){
+                    p {
+                        font-size: 3rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+        }
+    }
+    #bg-mask {
+        background-color: #ffffff;
+        opacity: 0;
+    }
+    .bg-buttons {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .button-left {
+        position: absolute;
+        top: 50%;
+        left: 13%;
+        height: 64px;
+        width: 64px;
+        border-radius: 32px;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        div {
+            margin-top: 22px;
+            margin-left: 28px;
+            width: 20px;
+            height: 20px;
+            border-left: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            transform: rotate(45deg);
+        }
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+    .button-right {
+        position: absolute;
+        top: 50%;
+        right: 13%;
+        height: 64px;
+        width: 64px;
+        border-radius: 32px;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        div {
+            margin-top: 22px;
+            margin-left: 17px;
+            width: 20px;
+            height: 20px;
+            border-right: 2px solid #ffffff;
+            border-top: 2px solid #ffffff;
+            transform: rotate(45deg);
+        }
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+
+}
+.main-content {
+    position: relative;
+    top: -180px;
+    width: 1280px;
+    margin: 0 auto;
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box {
+        width: 420px;
+        height: 490px;
+        padding: 20px;
+        border-radius: 4px;
+        background-color: #ffffff;
+        &:hover {
+            box-shadow: 2px 2px 5px #aaaaaa;
+        }
+        .button {
+            float: right;
+            margin: 15px;
+            padding: 0 5px 0 5px;
+            color: #d40e10;
+            line-height: 1.9;
+            font-weight: bold;
+            border: 1px solid #d40e10;
+            border-radius: 3px;
+            &:hover {
+                background-color: #d40e10;
+                color: #ffffff;
+            }
+        }
+        .title {
+            .line {
+                height: 3px;
+                width: 30px;
+                background-color: #d40e10;
+            }
+            div+div {
+                margin-bottom: 30px;
+                line-height: 2;
+                font-size: 2.5rem;
+                font-weight: bold;
+                
+            }
+        }
+        &#box1 {
+            .subtitle {
+                font-size: 2.4rem;
+            }
+            .subtitle2 {
+                color: #999999;
+                font-size: 0.9rem;
+            }
+            .para {
+                margin-top: 30px;
+                color: #707070;
+                line-height: 2;
+                font-size: 1.6rem;
+                span {
+                    color: #d40e10;
+                    line-height: 2;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &#box2 {
+            .title1 {
+                padding-left: 185px;
+                color: #d40e10;
+                font-size: 1.6rem;
+                line-height: 2;
+            }
+            .para1 {
+                color: #707070;
+                line-height: 1.8;
+                font-size: 1.4rem;
+            }
+            .title2 {
+                margin-top: 10px;
+                color: #d40e10;
+                font-size: 1.6rem;
+                line-height: 2;
+            }
+        }
+        &#box3 {
+            .panel {
+                &>div {
+                    display: inline-block;
+                    position: relative;
+                    padding: 8px;
+                    transition: all 0.5s;
+                    &:hover {
+                        padding: 0;
+                        opacity: 0.5;
+                    }
+                    &:nth-of-type(1) {
+                        top: 30px;
+                        left: 40px;
+                    }
+                    &:nth-of-type(2) {
+                        top: 50px;
+                        left: 25px;
+                    }
+                    &:nth-of-type(3) {
+                        top: 12px;
+                        left: 0px;
+                    }
+                    &:nth-of-type(4) {
+                        top: 15px;
+                        left: -5px;
+                    }
+                    &:nth-of-type(5) {
+                        top: 40px;
+                        left: -10px;
+                    }
+                    &:nth-of-type(6) {
+                        top: -20px;
+                        left: -20px;
+                    }
+                    &:nth-of-type(7) {
+                        top: 10px;
+                        left: 80px;
+                    }
+                    &:nth-of-type(8) {
+                        top: 0px;
+                        left: 90px;
+                    }
+                }
+            }
+        }
+
+    }
+    .news {
+        margin-top: 50px;
+        .title {
+            display: inline-block;
+            .line {
+                height: 3px;
+                width: 30px;
+                background-color: #d40e10;
+            }
+            div+div {
+                margin-bottom: 40px;
+                line-height: 2;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+        }
+        .button {
+            position: relative;
+            top: -5px;
+            left: 20px;
+            display: inline-block;
+            padding: 0 5px 0 5px;
+            color: #d40e10;
+            line-height: 1.9;
+            font-weight: bold;
+            border: 1px solid #d40e10;
+            border-radius: 3px;
+            &:hover {
+                background-color: #d40e10;
+                color: #ffffff;
+            }
+        }
+        .news-content {
+            display: flex;
+            justify-content: space-between;
+            >div {
+                
+                width: calc(50% - 20px);
+                padding: 20px;
+                background-color: #ffffff;
+                box-shadow: 2px 2px 5px #aaaaaa;
+                .news-img {
+                    float: right;
+                    margin-left: 10px;
+                }
+                .news-title {
+                    font-size: 1.6rem;
+                }
+                .news-time {
+                    margin-top: 10px;
+                    font-size: 1.4rem;
+                    color: #999;
+                }
+                .news-para {
+                    margin-top: 20px;
+                    font-size: 1.4rem;
+                    color: #666;
+                    span {
+                        font-size: 1.4rem;
+                        color: #d40e10;
+                    }
+                }
+            }
+        }
+    }
+}
